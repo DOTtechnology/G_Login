@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DOT | Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="res/images/icons/logo.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="res/css/styles.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--===============================================================================================-->
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="body-row row">
+        <div class="side-bar sidebar-expanded">
+            <ul class="list list-unstyled">
+                <div class="list-item bot align-items-center">
+                    <div class="row">
+                        <span class="col-6"><img class="logo" src="res/images/icons/logo.jpeg" alt=""></span>
+                        <a href="#" class="col-6 expander" data-toggle="sidebar-collapse"><span id="collapse-icon" class="fa fa-2x"></span></a>
+                    </div>
+                </div>
+                <div class="list-item name menu-collapse text-center" style="color: white;">
+                    <div class="w-100">
+                        Shop's Name
+                    </div>
+                </div>
+                <li class="bot menu text-white menu-collapse">
+                    <small>MENU</small>
+                </li>
+                <a href="#" class="list-items Dash-board active align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/Dashboard.png" alt=""></span> 
+                        <span class="menu-collapse ml-3">Dashboard</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items User-Profile align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/User Profile.png" alt=""></span> 
+                        <span class="menu-collapse ml-3">Profile</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items Orders align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/Order.png" alt=""></span> 
+                        <span class="menu-collapse ml-3">Orders</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items Stocking align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/Stokings.png" alt=""></span>
+                        <span class="menu-collapse ml-3">Stocking</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items Analytics align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/Analysis.png" alt=""></span> 
+                        <span class="menu-collapse ml-3">Analytics</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items Map align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/map.png" alt=""></span>
+                        <span class="menu-collapse ml-3">Maps</span>
+                    </div>
+                </a>
+                <a href="#" class="list-items Support align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span><img class="icons" src="res/images/icons/Support.png" alt=""></span> 
+                        <span class="menu-collapse ml-3">Support</span>
+                    </div>
+                </a>
+            </ul>
+        </div>
+        <div class="main col">
+            <nav class="navbar navbar-expand-md" style="box-shadow: 0 0px 25px rgba(0,0,0,0.2);">
+                <div class="col-12 col-md-9">
+                    <form class="form-inline">
+                        <input class="col-10 form-control" style="border-radius: 20px;" type="search" placeholder="Search" aria-label="Search">
+                        <div class="col-2 justify-content-start d-flex"><button class="btn my-2" type="submit"><i class="fa search-icon fa-search fa-lg"></i></button></div>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse justify-content-around">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><div class="notification"></div></a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link d-flex justify-content-around align-items-center" href="#">
+                          <img width="35" height="35" style="border-radius: 50%;" src="res/images/icons/user.png" alt="">
+                          <p class="mx-3 my-0">Name</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div id="dash-board" class="main-div">
+                <h1 class="dash mt-4 "><span style="font-weight: 700;">Dashboard</span> Overview</h1>
+                <div class="d-flex align-items-center">
+                    <div class="tabs dash-container">
+                        <div class="row">
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Order Placed
+                                    </div>
+                                    <ol class="list-group list-group-flush" style="overflow: scroll;">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">fsdgreg at eros</li>
+                                    <li class="list-group-item">ad at eros</li>
+                                    <li class="list-group-item">Vestibulfsdfsdfum at eros</li>
+                                    <li class="list-group-item">sdf at eros</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Order Placed
+                                    </div>
+                                    <ol class="list-group list-group-flush" style=" overflow: scroll;">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <img class="graph" src="res/images/stk.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <img class="graph" src="res/images/stk.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Order Placed
+                                    </div>
+                                    <ol class="list-group list-group-flush" style=" overflow: scroll;">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="cards col-12 col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Order Placed
+                                    </div>
+                                    <ol class="list-group list-group-flush" style="overflow: scroll;">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">fsdgreg at eros</li>
+                                        <li class="list-group-item">ad at eros</li>
+                                        <li class="list-group-item">Vestibulfsdfsdfum at eros</li>
+                                        <li class="list-group-item">sdf at eros</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="user-profile" class="main-div d-none">
+                <div class="prof-container">
+                    <div class="row prof-card">
+                        <div class="col-12 col-md-5 left">
+                            <img src="res/images/icons/user.png" style="height: 90%; width: 90%;" alt="">
+                        </div>
+                        <div class="col-12 col-md-7 right">
+                            <table class="mx-auto">
+                                <tr>
+                                    <th class="prof-title">Name: </th>
+                                    <td>Daddy Yankee</td>
+                                </tr>
+                                <tr>
+                                    <th class="prof-title">Contact Number: </th>
+                                    <td>9684382343</td>
+                                </tr>
+                                <tr>
+                                    <th class="prof-title">Email-id: </th>
+                                    <td>baba69@gmail.com</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="order" class="main-div d-none"></div>
+            <div id="stock" class="main-div d-none"></div>
+            <div id="analytics" class="main-div d-none"></div>
+            <div id="map" class="main-div d-none"></div>
+            <div id="support" class="main-div d-none"></div>
+        </div>
+    </div>
+  <script>
+      $('#collapse-icon').addClass('fa-angle-double-left'); 
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            $('.side-bar').removeClass('sidebar-expanded');
+            
+            $('#collapse-icon').removeClass('fa-angle-double-left');
+            $('.list').toggleClass('px-0');
+            $('.expander').toggleClass('justify-content-start');
+            $('.menu-collapse').toggleClass('d-none');
+            $('.sidebar-submenu').toggleClass('d-block');
+            $('.submenu-icon').toggleClass('d-inline');
+            $('.side-bar').toggleClass('sidebar-collapsed');
+            $('.logo').toggleClass('d-none');
+            // Collapse/Expand icon
+            $('#collapse-icon').addClass('fa-angle-double-right');
+            $('[data-toggle=sidebar-collapse]').click(function() {
+                $('.main').toggleClass('d-none');
+                $('.body-row').addClass('dark');
+            });
+
+            $('.Dash-board').click(function(){
+                $('.Dash-board').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#dash-board').removeClass('d-none');
+            });
+            $('.User-Profile').click(function(){
+                $('.User-Profile').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#user-profile').removeClass('d-none');
+            });
+            $('.Orders').click(function(){
+                $('.Orders').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#order').removeClass('d-none');
+            });
+            $('.Stocking').click(function(){
+                $('.Stocking').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#stock').removeClass('d-none');
+            });
+            $('.Analytics').click(function(){
+                $('.Analytics').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#analytics').removeClass('d-none');
+            });
+            $('.Map').click(function(){
+                $('.Map').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#map').removeClass('d-none');
+            });
+            $('.Support').click(function(){
+                $('.Support').addClass('active');
+                $('.main').toggleClass('d-none');
+                SidebarCollapse();
+                $('.main-div').addClass('d-none');
+                $('#support').removeClass('d-none');
+            });
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 992px)");
+    myFunction(x);
+    x.addListener(myFunction);
+    var bell = document.querySelector('.notification');
+    document.querySelector('button').addEventListener('click', function(){
+        var count = Number(bell.getAttribute('data-count')) || 0;
+        bell.setAttribute('data-count', count + 1);
+        bell.classList.remove('notify');
+        bell.offsetWidth = bell.offsetWidth;
+        bell.classList.add('notify');
+        if(count === 0){
+            bell.classList.add('show-count');
+        }
+    }, false);
+
+    //list active
+    $('.list-items').click(function(){
+        $('.active').removeClass('active');
+    });
+    // Collapse/Expand icon
+    
+    $('[sub=submit]').click(function(){
+        
+    });
+    // Collapse click
+    $('[data-toggle=sidebar-collapse]').click(function() {
+        SidebarCollapse();
+    });
+    
+    function SidebarCollapse () {
+        $('.list').toggleClass('px-0');
+        $('.expander').toggleClass('justify-content-start');
+        $('.menu-collapse').toggleClass('d-none');
+        $('.sidebar-submenu').toggleClass('d-block');
+        $('.submenu-icon').toggleClass('d-inline');
+        $('.side-bar').toggleClass('sidebar-collapsed sidebar-expanded ');
+        $('.logo').toggleClass('d-none');
+        
+        // Collapse/Expand icon
+        $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+    }
+
+    $('.Dash-board').click(function(){
+        $('.Dash-board').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#dash-board').removeClass('d-none');
+    });
+    $('.User-Profile').click(function(){
+        $('.User-Profile').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#user-profile').removeClass('d-none');
+    });
+    $('.Orders').click(function(){
+        $('.Orders').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#order').removeClass('d-none');
+    });
+    $('.Stocking').click(function(){
+        $('.Stocking').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#stock').removeClass('d-none');
+    });
+    $('.Analytics').click(function(){
+        $('.Analytics').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#analytics').removeClass('d-none');
+    });
+    $('.Map').click(function(){
+        $('.Map').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#map').removeClass('d-none');
+    });
+    $('.Support').click(function(){
+        $('.Support').addClass('active');
+        //$('.main').toggleClass('d-none');
+        //SidebarCollapse();
+        $('.main-div').addClass('d-none');
+        $('#support').removeClass('d-none');
+    });
+  </script>
+<!--===============================================================================================-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
